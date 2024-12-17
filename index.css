@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+background-color: rgb(240, 240, 240);
+}
+
+
+html, body{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+
+.title{
+text-align: center;
+}
+
+ul{
+ list-style-type: none;
+ text-align: right;
+ margin-top: 1px;
+ margin-bottom: 1px;
+}
+
+li{
+ display: inline;
+ margin-right: 8px;
+ text-decoration: none;
+}
+
+li a{
+  font-size: 10px;
+    font-family: "Open Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: light;
+      font-style: normal;
+}
+
+a{
+ text-decoration: none;
+ color: black;
+   font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: light;
+    font-style: normal;
+     font-size: 7px;
+ margin-top: 1px;
+ margin-bottom: 1px;
+}
+
+.story{
+ text-align: center;
+ font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: light;
+  font-style: normal;
+  font-size: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+h1{
+ font-family: "Alex Brush", cursive;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 75px;
+   margin-top: 2px;
+   margin-bottom: 2px;
+  }
+
+
+h2{
+ text-align: center;
+font-family: "Alex Brush", cursive;
+ font-weight: 100;
+ font-style: normal;
+     font-size: 45px;
+}
+
+h3{
+ text-align: center;
+font-family: "Alex Brush", cursive;
+ font-weight: 100;
+ font-style: normal;
+     font-size: 25px;
+}
+
+.icon{
+ float: left;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-size: 18px;
+  text-align: center;
+  margin-left: 4px;
+  font-family: "Alex Brush", cursive;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.date{
+ font-size: 9px;
+ text-align: center;
+  font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: light;
+    font-style: normal;
+    opacity: 60%;
+}
+
+table{
+ text-align: center;
+ font-size: 10px;
+ margin-left: auto;
+ margin-right: auto;
+  font-family: "Open Sans", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: light;
+   font-style: normal;
+}
+
+td{
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 10px;
+}
+
+.address{
+   font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: light;
+    font-style: normal;
+ text-align: center;
+ font-size: 10px;
+}
+
+.location{
+ margin-bottom: 2px;
+}
+
+#rsvp{
+margin-bottom: 2px;
+}
+
+.rsvptd{
+    font-family: "Open Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: light;
+      font-style: normal;
+      font-size: 10px;
+}
+
+.disc{
+      font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: light;
+        font-style: normal;
+        font-size: 10px;
+        text-align: center;
+          margin-left: 50px;
+            margin-right: 50px;
+}
+
+
+
+.maps{
+  width: 300px;
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+
+
+
+
+
+.pic{
+    background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+}
+
+
+.featureCont{
+
+  height: 375px;
+  width: 300px;
+  box-shadow: 3px 3px 16px 1px rgba(0, 0, 0, 0.445);
+  overflow: hidden;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+
+  
+}
+
+
+
+.feature{
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
+
+
+
+/* ANIMATIONS */
+
+
+@keyframes iconfade{
+  0%{
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  60%{
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.icon {
+    animation-name: iconfade;
+    animation-duration: 5s;
+}
+
+@keyframes navfade{
+  0%{
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  60%{
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.nav {
+  animation-name: navfade;
+  animation-duration: 5s;
+}
+
+@keyframes feafade{
+  0%{
+    opacity: 0;
+    transform: scale(0);
+  }
+  50%{
+    opacity: 0;
+    transform: scale(0);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.featureCont {
+  animation-name: feafade;
+  animation-duration: 4s;
+}
+
+@keyframes dafade{
+  0%{
+    opacity: 0; 
+    transform: scale(3);
+  }
+  50%{
+    opacity: 0;
+    transform: scale(3);
+  }
+  100%{
+    opacity: 0.6;
+    transform: scale(1);
+  }
+}
+
+.date {
+    animation-name: dafade;
+    animation-duration: 2s;
+}
+
+@keyframes evfade{
+  0%{
+    opacity: 0;
+  }
+  60%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.story {
+  animation-name: evfade;
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+}
+
+.scheduledata {
+  animation-name: evfade;
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+  }
+
+.address {
+  animation-name: evfade;
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+  }
+
+.rsvptd {
+  animation-name: evfade;
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+}
+
+.disc {
+  animation-name: evfade;
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+}
+  
+  @keyframes fadetit {
+    0% {
+    opacity: 0;
+    transform: translateY(60px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.title {
+    animation-name: fadetit;
+    animation-duration: 2s;
+}
+
+@keyframes titlesfade {
+  0% {
+    opacity: 0;
+    transform: translateX(150px) scale(0.9);
+  }
+  60% {
+    opacity: 0;
+    transform: translateX(150px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+.storytitle {
+  animation-name: titlesfade;
+  animation-duration: 5s;
+}
+
+
+.schedule {
+  animation-name: titlesfade;
+  animation-duration: 5s;
+}
+
+
+.location {
+  animation-name: titlesfade;
+  animation-duration: 5s;
+}
+
+
+
+#rsvp {
+  animation-name: titlesfade;
+  animation-duration: 5s;
+}
+
+
+@keyframes subsfade {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px) scale(0.9);
+  }
+
+  60% {
+    opacity: 0;
+    transform: translateX(-150px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+.sub1{
+  animation-name: subsfade;
+    animation-duration: 5s;
+}
+
+.readMore{
+  display: none;
+}
+
+.readLess{
+  display: inline;
+}
+
+@keyframes fade1 {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+.sub2{
+  animation-name: fade1;
+  animation-duration: 2s;
+
+}
+
+@keyframes fade2 {
+  0% {
+    opacity: 0;
+  }
+
+  /* 25%{
+    opacity: 0;
+  } */
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.story2{
+  animation-name: fade2;
+  animation-duration: 3s;
+
+  text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: light;
+    font-style: normal;
+    font-size: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+@keyframes fade3 {
+  0% {
+    opacity: 0;
+  }
+
+  /* 50% {
+    opacity: 0;
+  } */
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.sub3 {
+  animation-name: fade3;
+  animation-duration: 4s;
+  
+}
+
+@keyframes fade4 {
+  0% {
+    opacity: 0;
+  }
+
+  /* 75% {
+    opacity: 0;
+  } */
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.story3 {
+  animation-name: fade4;
+  animation-duration: 5s;
+
+  text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: light;
+    font-style: normal;
+    font-size: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.btnDiv{
+  text-align: center;
+  animation-name: evfade;
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+}
+
+#expBtn{
+  cursor: pointer;
+  background: none;
+  border: solid 0.01px rgb(185, 185, 185);
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: light;
+  font-style: normal;
+  font-size: 10px;
+display: block;
+margin: auto;
+}
+
+.ashbutton{
+    cursor: pointer;
+      background: none;
+      border: solid 0.01px rgb(185, 185, 185);
+        font-family: "Open Sans", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: light;
+          font-style: normal;
+}
+.georgiabutton{
+    cursor: pointer;
+      background: none;
+      border: solid 0.01px rgb(185, 185, 185);
+        font-family: "Open Sans", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: light;
+          font-style: normal;
+}
+
+
+
+
+
+@media (min-width: 400px) {
+  h1{
+    font-size: 80px;};
+
+
+}
+
+.email {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: light;
+  font-style: normal;
+  font-size: 10px;
+  color: blue;
+}

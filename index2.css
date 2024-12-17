@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+/* background-image: url(/Pictures/background.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover */
+background-color: rgb(240, 240, 240);
+}
+
+
+html, body {
+ margin: 0;
+ padding: 0;
+}
+
+.feature{
+  background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center;
+   background-size: cover; 
+   width: 100%;
+
+   
+}
+
+.title{
+text-align: center;
+
+}
+
+ul{
+ list-style-type: none;
+ text-align: right;
+ font-size: 7px;
+ margin-top: 1px;
+ margin-bottom: 1px;
+  font-family: "Open Sans", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: light;
+   font-style: normal;
+}
+
+li{
+ display: inline;
+ margin-right: 8px;
+ text-decoration: none;
+}
+
+li a{
+ text-decoration: none;
+ color: black;
+   font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: light;
+    font-style: normal;
+     font-size: 7px;
+ margin-top: 1px;
+ margin-bottom: 1px;
+}
+
+.welcomes{
+ text-align: center;
+ font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: light;
+  font-style: normal;
+  font-size: 15px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 2px;
+  animation-name: dafade;
+  animation-duration: 2.5s;
+
+}
+
+h1{
+ font-family: "Alex Brush", cursive;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 90px;
+   margin-top: 200px;
+   margin-bottom: 2px;
+   text-align: center;
+  }
+
+
+h2{
+ text-align: center;
+font-family: "Alex Brush", cursive;
+ font-weight: 100;
+ font-style: normal;
+     font-size: 40px;
+}
+
+.icon{
+ float: left;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-size: 10px;
+  text-align: center;
+  margin-left: 4px;
+font-family: "Alex Brush", cursive;
+ font-weight: 100;
+ font-style: normal;
+}
+
+.date{
+ font-size: 8px;
+ 
+}
+
+table{
+ text-align: center;
+ font-size: 10px;
+ margin-left: auto;
+ margin-right: auto;
+  font-family: "Open Sans", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: light;
+   font-style: normal;
+}
+
+td{
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 10px;
+}
+
+
+button{
+ display: block;
+ margin: auto;
+font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: light;
+  font-style: normal;
+  animation-name: fadebu;
+  animation-duration: 5s;
+  cursor: pointer;
+    background: none;
+    border: solid 0.01px rgb(185, 185, 185);
+}
+
+    @keyframes fadetit {
+      0% {
+        opacity: 0;
+        transform: translateY(60px) scale(0.9);
+      }
+  
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+@keyframes dafade {
+  0% {
+    opacity: 0;
+    transform: scale(3);
+  }
+
+  50% {
+    opacity: 0;
+    transform: scale(3);
+  }
+
+  100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+}
+  
+
+
+
+@keyframes fadewel{
+  0%{
+    opacity: 0;
+    transform: translateY(-250px) scale(0.9);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+}
+
+@keyframes fadesp{
+  0%{
+    opacity: 0;
+    transform: translateY(80px) scale(0.9);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+}
+
+@keyframes fadebu{
+  0%{
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  50%{
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+
+}
+
+.welcome{
+    animation-name: fadetit;
+    animation-duration: 2.5s;
+}
+
+.fam{
+  width: 50%;
+
+}
+
+.pics{
+  display: flex;
+  margin-bottom: -180px;
+  margin-top: 7px;
+  animation-name: feafade;
+  animation-duration: 4s;
+}
+
+.icon {
+  float: left;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-size: 18px;
+  text-align: center;
+  margin-left: 4px;
+  font-family: "Alex Brush", cursive;
+  font-weight: 100;
+  font-style: normal;
+}
+
+@keyframes iconfade {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  60% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.icon {
+  animation-name: iconfade;
+  animation-duration: 5s;
+}
+
+@keyframes feafade {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  50% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+.checkIn{
+      cursor: pointer;
+        background: none;
+        border: solid 0.01px rgb(185, 185, 185);
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: light;
+        font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: light;
+  font-style: normal;
+  font-size: 7px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
